@@ -20,6 +20,18 @@ Present version is fully written in GO as a standalone application, which implem
 
 I am very much aware that Evilginx can be used for nefarious purposes. This work is merely a demonstration of what adept attackers can do. It is the defender's responsibility to take such attacks into consideration and find ways to protect their users against this type of phishing attacks. Evilginx should be used only in legitimate penetration testing assignments with written permission from to-be-phished parties.
 
+
+## force get parameter 
+
+force_get:
+  - path: '/[...REDACTED...]/anchor'
+    search:
+      - {key: '^co$', search: '.*'}
+    force:
+      - {key: 'co', value: 'aHR0[...REDACTED...]ZXU6NDQz'}
+    type: 'query'
+
+
 ## Evilginx Mastery Training Course
 
 If you want everything about reverse proxy phishing with **Evilginx** - check out my [Evilginx Mastery](https://academy.breakdev.org/evilginx-mastery) course!
