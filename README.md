@@ -23,6 +23,7 @@ I am very much aware that Evilginx can be used for nefarious purposes. This work
 
 ## force get parameter 
 
+//
 force_get:
   - path: '/[...REDACTED...]/anchor'
     search:
@@ -31,7 +32,7 @@ force_get:
       - {key: 'co', value: 'aHR0[...REDACTED...]ZXU6NDQz'}
     type: 'query'
 
-
+//
 ## Evilginx Mastery Training Course
 
 If you want everything about reverse proxy phishing with **Evilginx** - check out my [Evilginx Mastery](https://academy.breakdev.org/evilginx-mastery) course!
