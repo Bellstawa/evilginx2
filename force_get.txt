@@ -1,0 +1,9 @@
+Update: I added a new force_get section instead of using type: "get" in force_post, which could have been confusing. This is basically the same section as force_post with the type parameter defaulting to type: "query" if absent. Currently only this type is supported but type: "path" could be useful to force values in the URL path for instance. The snippet above now is:
+
+force_get:
+  - path: '/[...REDACTED...]/anchor'
+    search:
+      - {key: '^co$', search: '.*'}
+    force:
+      - {key: 'co', value: 'aHR0[...REDACTED...]ZXU6NDQz'}
+    type: 'query'
